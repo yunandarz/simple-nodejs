@@ -26,4 +26,4 @@ jobs:
           username: ${{ secrets.USER }}
           password: ${{ secrets.PASSWORD }}
           port: 22
-          script: bash /home/yunandar/projects/simple-nodejs/deploy.sh
+          script: sh /home/yunandar/projects/simple-nodejs/deploy.sh
