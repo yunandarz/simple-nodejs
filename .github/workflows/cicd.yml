@@ -20,6 +20,7 @@ jobs:
           host: ${{ secrets.HOST }}
           username: ${{ secrets.USER }}
           password: ${{ secrets.PASSWORD }}
+          run: pwd
       - name: Deploy Service
         uses: appleboy/ssh-action@master
         with:
@@ -27,5 +28,4 @@ jobs:
           username: ${{ secrets.USER }}
           password: ${{ secrets.PASSWORD }}
           port: 22
-          script: pwd
           script: bash /home/yunandar/projects/simple-nodejs/deploy.sh
