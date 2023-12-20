@@ -27,7 +27,4 @@ jobs:
           username: ${{ secrets.USER }}
           key: ${{ secrets.SSH_PRIVATE_KEY }}
           port: 22
-          script: |
-            set -e
-            bash /home/yunandar/projects/simple-nodejs/deploy.sh
-
+          script: bash /home/yunandar/deploy.sh
